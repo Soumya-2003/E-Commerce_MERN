@@ -46,6 +46,11 @@
   @import "admin-styles/mediaquery";
   
 
+  .heading {
+    @include heading;
+    margin: 1rem 0;
+    text-align: center;
+  }
 
   .header{
     @include flex(row,flex-end,stretch,1.2rem);
