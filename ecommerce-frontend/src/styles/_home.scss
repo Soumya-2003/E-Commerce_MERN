@@ -18,19 +18,19 @@
       @include flex(row, space-between, center);
     }
 
-.findmore {
-    font-size: 1rem;
-}
+    .findmore {
+        font-size: 1rem;
+    }
 
-> main {
-    width: 100%;
-    flex: 1;
-    display: flex;
-    gap: 1rem;
-    overflow-x: auto;
+    > main {
+        width: 100%;
+        flex: 1;
+        display: flex;
+        gap: 1rem;
+        overflow-x: auto;
 
-    &::-webkit-scrollbar {
-        display: none;
+        &::-webkit-scrollbar {
+            display: none;
     }
 }
 }
