@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 type CartItemProps = {
 
-    cartItem:any;
+    cartItem : any;
 
 };
 
@@ -17,7 +17,9 @@ const CartItem = ({cartItem} : CartItemProps) => {
       </article>
 
       <div>
-        
+        <button>-</button>
+        <p>{quantity}</p>
+        <button>+</button>
       </div>
     </div>
   )

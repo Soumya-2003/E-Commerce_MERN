@@ -44,7 +44,7 @@ const Cart = () => {
       <main>
 
         {
-          cartItems.map((i,idx) => <CartItem key={idx}/>)
+          cartItems.map((i,idx) => <CartItem key={idx} cartItem={i}/>)
         }
 
 
