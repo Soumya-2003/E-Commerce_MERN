@@ -1,10 +1,12 @@
 import { ChangeEvent, useState } from "react"
 import { BiArrowBack } from "react-icons/bi";
+import { useNavigate } from "react-router-dom";
 
 
 const Shipping = () => {
 
-    const Shipping = () => {
+    const navigate = useNavigate();
+
         const [shippingInfo, setShippingInfo] = useState({
             address: "",
             city: "",
@@ -14,11 +16,11 @@ const Shipping = () => {
         });
 
         const changeHandler = (e: ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {
-            setShippingInfo(prev=>({...prev,[e.target.name]:e.target.value}))
+            setShippingInfo((prev)=>({...prev,[e.target.name]:e.target.value}));
         };
         return (
             <div className="shipping">
-                <button>
+                <button className="back-btn" onClick={() => navigate("/cart")}>
                     <BiArrowBack/>
                 </button>
 
@@ -72,13 +74,15 @@ const Shipping = () => {
                         value={shippingInfo.pinCode} 
                         onChange={changeHandler} 
                     />
+
+                    <button type="submit">Pay Now</button>
                 </form>
 
 
             </div>
           )
-        }
     }
+    
 
 
 

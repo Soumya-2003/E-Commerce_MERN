@@ -46,3 +46,12 @@
 @mixin baseShadow() {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.384);
 }
+
+@mixin btn($s: 0.5rem 1rem, $bg,$color) {
+  cursor: none;
+  border: none;
+  outline: none;
+  padding: $s;
+  background-color: $bg;
+  color: $color;
+}
