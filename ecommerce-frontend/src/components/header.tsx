@@ -4,7 +4,7 @@ import { Link } from "react-router-dom"
 
 import { useState } from "react"
 
-const user = { _id: "dfsds", role:"admin"}
+const user = { _id: "", role:""}
 
 
 
