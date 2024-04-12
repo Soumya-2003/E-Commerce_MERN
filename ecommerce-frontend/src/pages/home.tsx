@@ -18,7 +18,13 @@ const Home = () => {
     </h1>
 
     <main>
-      <ProductCard productId="adasdasd" name="macbook" price={109100} stock={546} handler={addToCartHandler} photo="https://m.media-amazon.com/images/I/71ItMeqpN3L._AC_UY327_FMwebp_QL65_.jpg" />
+      <ProductCard 
+        productId="adasdasd" 
+        name="macbook" 
+        price={109100} 
+        stock={546} 
+        handler={addToCartHandler} 
+        photo="https://m.media-amazon.com/images/I/71ItMeqpN3L._AC_UY327_FMwebp_QL65_.jpg" />
     </main>
 
     </div>
