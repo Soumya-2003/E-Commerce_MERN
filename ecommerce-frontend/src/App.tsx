@@ -2,6 +2,8 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
 import { lazy, Suspense } from "react"
 import Loader from "./components/loader"
 import Header from "./components/header"
+import Orders from "./pages/orders"
+import OrderDetails from "./pages/order-details"
 
 
 
@@ -49,9 +51,11 @@ const App = () => {
           {/* Not Logged In Route */}
             <Route path="/login" element={<Login />} />
 
-          {/*Logged n User Routes*/}
+          {/*Logged In User Routes*/}
           <Route>
               <Route path="/shipping" element={<Shipping />} />
+              <Route path="/orders" element={<Orders />} />
+              <Route path="/orders/:id" element={<OrderDetails />} />
           </Route>
           
           {/*Admin Routes*/}
